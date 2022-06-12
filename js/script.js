@@ -28,13 +28,6 @@ const slides = [
 
 console.log(slides);
 
-/*
-Descrizione:
-Far funzionare lo slider partendo dall’html ricevuto.
--Al click su una freccia, l’immagine mostrata cambia.
--la lista delle thumbs deve essere generata tramite un v-for
-*/
-
 new Vue (
 	{
 		el: "#app",
@@ -63,3 +56,10 @@ new Vue (
 		}
 	}
 )
+
+/*
+Descrizione:
+Far funzionare lo slider partendo dall’html ricevuto.
+-Al click su una freccia, l’immagine mostrata cambia.
+-la lista delle thumbs deve essere generata tramite un v-for
+*/
