@@ -28,22 +28,11 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
-                    <div class="thumb active">
-                        <img src="img/01.jpg" alt="Svezia"/>
-                    </div>
-                    <div class="thumb">
-                        <img src="img/02.jpg" alt="Svizzera" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/03.jpg" alt="Gran Bretagna" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/04.jpg" alt="Germania" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/05.jpg" alt="Paradise" />
+                    <div class="prev" @click="prevImage"></div>
+                    <div class="next" @click="nextImage"></div>
+
+                    <div v-for="(picture, i) in arraySlides" class="thumb active">
+                        <img :src="picture.image" :alt="picture.title" :id="picture.id"/>
                     </div>
                 </div>
 
