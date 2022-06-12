@@ -52,13 +52,14 @@ new Vue (
 					this.slideIndex = this.slideIndex;
 				}
 			},
+
 			nextSlide() {
 				if (this.slideIndex < this.slide.length - 1) {
 					this.slideIndex++;
 				} else {
 					this.slideIndex = this.slideIndex;
 				}
-			},
+			}
 		}
 	}
 )
