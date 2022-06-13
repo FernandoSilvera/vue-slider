@@ -33,7 +33,7 @@ new Vue (
 		el: "#app",
 
 		data: {
-			slide: slides,
+			slidesList: slides,
 			slideIndex: 0,
 		},
 
